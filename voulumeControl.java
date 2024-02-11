@@ -2,15 +2,15 @@ package codechef.level500;
 
 import java.util.Scanner;
 
-public class donationReward {
+public class voulumeControl {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
         for (int i = 0; i < T ; i++) {
             int X = sc.nextInt();
-            if ( X <=  3 ) System.out.println("BRONZE");
-            else if ( X > 3 && X <= 6 ) System.out.println("SILVER");
-            else if (X > 6 ) System.out.println("GOLD");
+            int Y = sc.nextInt();
+            if ( X > Y ) System.out.println(X - Y );
+            else System.out.println(Y-X);
         }
     }
 }
